@@ -5,22 +5,9 @@
 }
 .top-bar {
     background-color: #011434;
-    height: 90px;
-    
-}
-.logo {
+    height: 100%;
     max-width: 100%;
-    height: auto;
 }
-.logo1 {
-    height: 820px;
-    max-width: 100%;
-    height: auto;
-    background-color: #011434;
-    
-}
-
-
 
 .card {
     border-radius: 5px;
@@ -53,6 +40,7 @@
 }
 .laptop {
     border-radius: 5px 5px 0 0;
+
 }
 .card p {
     grid-area: p;
@@ -67,18 +55,9 @@
     grid-area: twitter;
     width: 30px;
 }
-.logo3 {
-    background-color: #011434;
-    width: 100vw;
-    height: 80px;
-    z-index: 1;
-    position: relative;
-    margin-top: 700px;
-    margin-bottom: 5px;
-}
+
 @media screen and (max-width: 920px){
     .grid {
-
         display: grid;
         grid-template-columns: repeat(3, 1fr) ;
         grid-template-rows: repeat(auto-fill, 1fr);
@@ -95,6 +74,7 @@
 }
 @media screen and (max-width: 520px){
     .grid {
+        margin: 0 50px 0 50px;
         display: grid;
         grid-template-columns: repeat(1, 1fr) ;
         grid-template-rows: repeat(auto-fill, 1fr);
@@ -103,8 +83,9 @@
 }
 @media screen and (max-width: 320px){
     .grid {
+        margin: 0;
         display: grid;
-        grid-template-columns: repeat(3, 1fr) ;
+        grid-template-columns: repeat(1, 1fr) ;
         grid-template-rows: repeat(auto-fill, 1fr);
         gap: 5px;
     }
