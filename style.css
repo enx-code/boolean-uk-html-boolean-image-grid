@@ -109,3 +109,9 @@
         gap: 5px;
     }
 }
+.footer {
+    background-color: #011434;
+    height: 90px;
+    width: 100vw;
+    margin-top: 10px;
+}
