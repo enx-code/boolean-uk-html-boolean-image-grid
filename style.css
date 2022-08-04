@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.top-bar {
+    background-color: #011434;
+    height: 90px;
+    
+}
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+.logo1 {
+    height: 820px;
+    max-width: 100%;
+    height: auto;
+    background-color: #011434;
+    
+}
+
+
+
+.card {
+    border-radius: 5px;
+    border: 1px solid black;
+    height: 350px;
+    width:200px;
+    display: grid;
+    grid-template: 
+    ". . . logo2" 90px
+    ". . . ." 1fr
+    ". . github twitter" 50px
+    ". p p ." 90px /
+    20px 1fr 35px 35px;
+    position: relative;
+}
+.grid {
+    margin: 0 100px 0 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) ;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 5px;
+}
+.logo2 {
+    grid-area: logo2;
+    border: 0.5px solid black; 
+    border-radius: 50px;
+    margin-top: 5px;
+    
+    z-index: 1;
+}
+.laptop {
+    border-radius: 5px 5px 0 0;
+}
+.card p {
+    grid-area: p;
+    /* text-align: center; */
+}
+.github {
+    grid-area: github;
+    width: 30px;
+
+}
+.twitter {
+    grid-area: twitter;
+    width: 30px;
+}
+.logo3 {
+    background-color: #011434;
+    width: 100vw;
+    height: 80px;
+    z-index: 1;
+    position: relative;
+    margin-top: 700px;
+    margin-bottom: 5px;
+}
+@media screen and (max-width: 920px){
+    .grid {
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr) ;
+        grid-template-rows: repeat(auto-fill, 1fr);
+        gap: 5px;
+    }
+}
+@media screen and (max-width: 720px){
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) ;
+        grid-template-rows: repeat(auto-fill, 1fr);
+        gap: 5px;
+    }
+}
+@media screen and (max-width: 520px){
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr) ;
+        grid-template-rows: repeat(auto-fill, 1fr);
+        gap: 5px;
+    }
+}
+@media screen and (max-width: 320px){
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr) ;
+        grid-template-rows: repeat(auto-fill, 1fr);
+        gap: 5px;
+    }
+}
